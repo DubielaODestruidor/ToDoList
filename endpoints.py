@@ -24,6 +24,11 @@ tasks: Dict[int, Task] = {}
 current_id = 1
 
 
+@app.get("/")
+async def root():
+    return {"message": "Hi mom!"}
+
+
 # Create a task
 @app.post("/tasks/", response_model=Task)
 async def create_task(task: Task):

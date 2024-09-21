@@ -4,7 +4,7 @@ import os
 from InquirerPy import inquirer
 import requests
 
-# ? Can this stay here?
+# API URL
 url_api = "http://127.0.0.1:8000"
 
 
@@ -85,7 +85,7 @@ def delete_task(task_id):
 
 
 def menu():
-    header = pyfiglet.figlet_format("To-Do List")
+    header = pyfiglet.figlet_format("ToDo List")
     centered_header = center_figlet_text(header)
     print("\n" + centered_header + "\n")
 
